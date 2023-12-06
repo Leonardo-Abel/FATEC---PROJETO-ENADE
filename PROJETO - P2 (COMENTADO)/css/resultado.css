@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+}
+/* Aqui, o seletor universal * é utilizado para aplicar as propriedades a todos os elementos no documento HTML. A propriedade margin está sendo definida como 0 para remover quaisquer margens padrão dos elementos, o que pode resultar em um espaçamento indesejado entre os elementos e as bordas da página. */
+
+body{
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+/* Essas instruções estão aplicando estilos específicos ao elemento body. No entanto, essas propriedades normalmente se aplicam a elementos com display flex. As propriedades justify-content: center; e align-items: center; estão sendo utilizadas para centralizar o conteúdo horizontal e verticalmente no contêiner pai. No entanto, para que essas propriedades tenham efeito, o display do elemento deve ser definido como flex ou grid. */
+
+header{
+    width: 100%;
+    height: 110px;
+    flex-shrink: 0;
+    background: var(--main-blue, #2EC4B6);
+    justify-content: center;
+} 
+/* width: 100%;: Define a largura do elemento header como 100% da largura do seu contêiner pai.
+height: 110px;: Define a altura do elemento header como 110 pixels.
+flex-shrink: 0;: Impede que o elemento header encolha em relação ao espaço disponível.
+background: var(--main-blue, #2EC4B6);: Define o plano de fundo do elemento header. Ele usa a cor definida pela variável --main-blue se estiver definida, caso contrário, usa a cor de fallback #2EC4B6.
+justify-content: center;: Centraliza o conteúdo horizontalmente dentro do elemento header. */
+
+nav{
+    display: flex;
+    padding: 18.072px 44.611px 0px 44.538px;
+    justify-content: center;
+    align-items: center;
+}
+/* display: flex;: Define o elemento nav como um contêiner flexível.
+padding: 18.072px 44.611px 0px 44.538px;: Define o preenchimento (padding) para o elemento nav com 18.072 pixels no topo, 44.611 pixels à direita, 0 pixels na parte inferior e 44.538 pixels à esquerda.
+justify-content: center;: Centraliza o conteúdo horizontalmente dentro do elemento nav.
+align-items: center;: Centraliza o conteúdo verticalmente dentro do elemento nav. */
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-image: url(./wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 50px;
+}
+/* display: flex;: Define o contêiner main como um contêiner flexível, permitindo que seus itens filhos sejam organizados de acordo com as propriedades de flexbox.
+width: 100%;: Define a largura do contêiner main como 100% da largura do seu contêiner pai.
+justify-content: center;: Centraliza os itens horizontalmente dentro do contêiner main.
+background-image: url(./wave.svg);: Define a imagem de fundo do contêiner main como o arquivo wave.svg que está localizado na mesma pasta que o arquivo HTML.
+background-repeat: no-repeat;: Faz com que a imagem de fundo não se repita.
+background-size: cover;: Ajusta o tamanho da imagem de fundo para cobrir todo o contêiner, mantendo a proporção da imagem.
+background-attachment: fixed;: Fixa a imagem de fundo para que o restante do conteúdo possa rolar sobre ela.
+gap: 50px;: Define o espaçamento entre os itens dentro do contêiner como 50\ pixels. */
+
+.retangulo{
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+    min-height: 777px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border-bottom: 4px solid var(--detail-orange, #F4A261);
+    background: rgba(255, 255, 255, 0.80);
+}
+/* display: flex;: Define o contêiner com a classe .retangulo como um contêiner flexível, permitindo que seus itens filhos sejam organizados de acordo com as propriedades de flexbox.
+flex-direction: column;: Define a direção dos itens dentro do contêiner como uma coluna, o que significa que os itens serão dispostos de cima para baixo.
+width: 880px;: Define a largura do contêiner como 880 pixels.
+height: 777px;: Define a altura do contêiner como 777 pixels.
+justify-content: center;: Centraliza os itens verticalmente dentro do contêiner.
+flex-shrink: 0;: Impede que o contêiner encolha em relação ao espaço disponível.
+border-radius: 20px;: Define o raio do canto do contêiner como 20 pixels, dando a ele cantos arredondados.
+border-bottom: 4px solid var(--detail-orange, #F4A261);: Define uma borda na parte inferior do contêiner com 4 pixels de espessura e uma cor especificada pela variável --detail-orange, se estiver definida, caso contrário, usa a cor de fallback #F4A261.
+background: rgba(255, 255, 255, 0.80);: Define a cor de fundo do contêiner como branco com 80% de opacidade, usando o modelo de cor rgba (vermelho, verde, azul, alfa). */
+
+.titulo{
+    width: 100vw;
+    height: 60px;
+    background: var(--detail-orange, #F4A261);
+}
+/* width: 880px;: Define a largura do elemento como 880 pixels.
+height: 60px;: Define a altura do elemento como 60 pixels.
+background: var(--detail-orange, #F4A261);: Define o plano de fundo do elemento. Ele usa a cor definida pela variável --detail-orange se estiver definida, caso contrário, usa a cor de fallback #F4A261. */
+p{
+    margin: 15px;
+    color: var(--white, #FFF);
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/* margin: 15px;: Define uma margem de 15 pixels para todos os lados do parágrafo.
+color: var(--white, #FFF);: Define a cor do texto como a cor branca, usando a variável --white se estiver definida, caso contrário, usa a cor de fallback #FFF.
+font-family: Sen;: Define a família de fontes do parágrafo como "Sen".
+font-size: 28px;: Define o tamanho da fonte como 28 pixels.
+font-style: normal;: Define o estilo da fonte como normal, o que significa que ela não está inclinada ou em itálico.
+font-weight: 700;: Define a espessura da fonte como "negrito" (700).
+line-height: normal;: Define a altura da linha como normal, o que significa que a altura da linha será determinada pelo tamanho da fonte. */
+
+.indice{
+    display: inline-flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    gap: 6px;
+}
+/* display: inline-flex;: Define o elemento com a classe .indice como um contêiner de linha flexível, permitindo que os elementos dentro dele sejam organizados em uma linha flexível.
+align-items: flex-start;: Alinha os itens ao longo do eixo transversal para o início do contêiner.
+align-content: center;: Alinha as linhas flexíveis dentro do contêiner ao centro.
+justify-content: center;: Centraliza os itens ao longo do eixo principal dentro do contêiner.
+gap: 6px;: Define o espaçamento entre os itens dentro do contêiner como 6 pixels. */
+
+section{
+    position:static;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    min-height: 220px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+/* display: flex;: Define o elemento section como um contêiner flexível, permitindo que seus itens filhos sejam organizados de acordo com as propriedades de flexbox.
+flex-direction: column;: Define a direção dos itens dentro do contêiner section como uma coluna, o que significa que os itens serão dispostos de cima para baixo.
+width: 280px;: Define a largura do elemento como 280 pixels.
+height: 220px;: Define a altura do elemento como 220 pixels.
+flex-shrink: 0;: Impede que o elemento encolha em relação ao espaço disponível.
+border-radius: 20px;: Define o raio dos cantos do elemento como 20 pixels.
+background: var(--white, #FFF);: Define a cor de fundo do elemento como a cor branca, usando a variável --white se estiver definida, caso contrário, usa a cor de fallback #FFF.
+box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);: Aplica uma sombra ao elemento com um deslocamento horizontal de 0 pixels, um deslocamento vertical de 2 pixels, um raio de desfoque de 5 pixels e uma cor de sombra de preto com 15% de opacidade.
+align-items: center;: Centraliza os itens horizontalmente dentro do contêiner section.
+align-content: center;: Alinha o conteúdo dentro do contêiner section ao centro.
+justify-content: center;: Centraliza os itens verticalmente dentro do contêiner section.
+margin-top: 15px;: Define uma margem superior de 15 pixels para o elemento section. */
+
+.pontuacao{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 4.5px;
+    margin-top: 0px;
+}
+/* text-align: center;: Define o alinhamento do texto como centralizado.
+font-family: Montserrat;: Define a família de fontes do texto como "Montserrat".
+font-size: 45px;: Define o tamanho da fonte como 45 pixels.
+font-style: normal;: Define o estilo da fonte como normal, o que significa que ela não está inclinada ou em itálico.
+font-weight: 800;: Define a espessura da fonte como "extra-negrito" (800).
+line-height: normal;: Define a altura da linha como normal, o que significa que a altura da linha será determinada pelo tamanho da fonte.
+font-variant: all-small-caps;: Converte o texto em letras maiúsculas pequenas.
+letter-spacing: 4.5px;: Define o espaçamento entre letras como 4.5 pixels.
+margin-top: 0px;: Define a margem superior do elemento como 0 pixels. */
+
+.grafico{
+    display: flex;
+    width: 200px;
+    height: 20px;
+    background-color: #f2f2f2;
+}
+/* display: flex;: Define o contêiner da classe .grafico como um contêiner flexível, permitindo que seus itens filhos sejam organizados com as propriedades de flexbox.
+width: 200px;: Define a largura do contêiner como 200 pixels.
+height: 20px;: Define a altura do contêiner como 20 pixels.
+background-color: #f2f2f2;: Define a cor de fundo do contêiner como um tom de cinza claro. */
+
+.acerto{
+    height: 100%;
+    background-color: #1B4332;
+}
+/* height: 100%;: Define a altura do elemento com a classe .acerto como 100% da altura do seu contêiner pai.
+width: 33%;: Define a largura do elemento como 33% da largura do seu contêiner pai.
+background-color: #1B4332;: Define a cor de fundo do elemento como uma tonalidade de verde escuro. */
+
+.erro{
+    height: 100%;
+    background-color: #9A031E;
+}
+/* height: 100%;: Define a altura do elemento com a classe .erro como 100% da altura do seu contêiner pai.
+width: 33%;: Define a largura do elemento como 33% da largura do seu contêiner pai.
+background-color: #9A031E;: Define a cor de fundo do elemento como uma tonalidade de vermelho escuro. */
+
+#acerto{
+    color: #1B4332;
+}
+
+#erro{
+    color: #9A031E;
+}
+
+#branco{
+    color: #E76F51;
+}
+/* #acerto, #erro e #branco: São seletores de identificador que definem as cores do texto dos elementos com os IDs 'acerto', 'erro' e 'branco', respectivamente. A cor do texto para cada um desses elementos é definida como uma determinada tonalidade, especificada em códigos hexadecimais. */
+
+.tabela{
+    margin-top: 10%;
+}
+/* .tabela: É um seletor de classe que define a margem superior da tabela como 10% do tamanho do contêiner pai. */
+
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+    width: 850px;
+    margin: 15px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+/* display: flex;: Define o elemento da tabela como um contêiner flexível, permitindo que seus elementos filhos sejam organizados com as propriedades de flexbox.
+flex-direction: column;: Define o elemento da tabela para ser organizado em colunas.
+align-items: center;: Centraliza os itens ao longo do eixo transversal (vertical) dentro do contêiner.
+justify-content: center;: Centraliza os itens ao longo do eixo principal (horizontal) dentro do contêiner.
+text-align: center;: Centraliza o texto dentro das células da tabela.
+height: 100px;: Define a altura da tabela como 100 pixels.
+width: 850px;: Define a largura da tabela como 850 pixels.
+margin: 15px;: Define uma margem externa de 15 pixels ao redor da tabela.
+border-collapse: collapse;: Especifica que as bordas das células da tabela devem ser dobradas em uma única borda quando possível.
+font-size: 20px;: Define o tamanho da fonte do texto dentro da tabela como 20 pixels. */
+
+th, td{
+    border-color: #000;
+    border: 1px solid;
+    min-width: 250px;
+    height: 30px;
+}
+/* th, td: São seletores que aplicam as mesmas regras de estilo para os elementos de célula de cabeçalho e célula de dados da tabela HTML.
+border-color: #000;: Define a cor da borda como preto.
+border: 1px solid;: Define a largura, o estilo e a cor da borda das células como 1 pixel, sólida e preta.
+min-width: 850px;: Define a largura mínima das células da tabela como 250 pixels.
+height: 30px;: Define a altura das células da tabela como 30 pixels. */
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+/* display: flex;: Define o elemento com a classe .button como um contêiner flexível, permitindo que seus elementos filhos sejam organizados com as propriedades de flexbox.
+flex-direction: column;: Define a direção do eixo principal para ser vertical, o que alinha os itens em uma coluna.
+align-items: center;: Centraliza os itens ao longo do eixo transversal (vertical) dentro do contêiner.
+align-content: center;: Centraliza o conteúdo ao longo do eixo secundário, quando houver espaço extra na linha.
+justify-content: center;: Centraliza os itens ao longo do eixo principal (horizontal) dentro do contêiner. */
+
+button{
+    width: 380px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--detail-orange, #F4A261);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* width: 380px;: Define a largura do botão como 380 pixels.
+height: 60px;: Define a altura do botão como 60 pixels.
+flex-shrink: 0;: Impede que o botão diminua em relação a outros elementos flexíveis.
+border-radius: 20px;: Define o raio da borda do botão como 20 pixels, criando cantos arredondados.
+background: var(--detail-orange, #F4A261);: Define a cor de fundo do botão como uma variável CSS com uma cor de fallback de #F4A261 caso a variável não seja definida.
+margin-top: 5%;: Define a margem superior do botão como 5% em relação ao elemento pai.
+margin-bottom: 5%;: Define a margem inferior do botão como 5% em relação ao elemento pai. */
+
+.graficos {
+    height: 200px;
+    /* Define a altura como 200 pixels */
+    width: 350px;
+    /* Define a largura como 350 pixels */
+    padding: 100px 0;
+    /* Adiciona espaçamento interno de 100 pixels na parte superior e inferior, e 0 nas laterais */
+}
+
+.dados {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    align-items: center;
+    /* Alinha os itens no centro vertical do contêiner */
+    margin-top: 2%;
+    /* Adiciona uma margem superior de 2% do tamanho do contêiner pai */
+}
+
+.dados h5 {
+    min-width: 80px;
+    /* Define a largura mínima como 80 pixels para elementos <h5> dentro de ".dados" */
+}

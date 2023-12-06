@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    /* Define o preenchimento como 0 para todos os elementos */
+    margin: 0;
+    /* Define a margem como 0 para todos os elementos */
+    box-sizing: border-box;
+    /* Define o modelo de caixa como "border-box" para todos os elementos. */
+}
+  
+a {
+  text-decoration: none;
+  /* Remove a decoração de texto, como sublinhado, dos elementos de âncora */
+  color: var(--text-color);
+  /* Define a cor do texto usando uma variável chamada "--text-color" */
+}
+
+ul, ol {
+  list-style: none;
+  /* Remove os marcadores (pontos ou números) padrão das listas */
+}
+
+header {
+  /* ORGANIZA AS TAGS FILHAS NA DIV */
+  display: flex;
+  /* OS ITENS ADICIONADOS DICAM COMO COLUNA */
+  flex-direction: column;
+  /* OS ITENS VÃO PARA O COMEÇO */
+  /* QUANDO NÃO ESTÁ EM COLUNA ELE AJUSTA AS POSIÇÕES DE FORMA HORIZONTAL, JÁ EM COLUNA, FICA DE FORMA VERTICAL */
+  justify-content: center;
+  /* QUANDO NÃO ESTÁ EM COLUNA ELE AJUSTA AS POSIÇÕES DE FORMA VERTICAL, JÁ EM COLUNA, FICA DE FORMA HORIZONTAL */
+  align-items: center;
+  /* Alinha os itens no centro verticalmente */
+  align-items: start;
+  /* Alinha os itens no inicio */
+  /* VAI PARA A ESQUEDA  */
+  padding-left: 0px;
+  /* VAI PARA A DIREITA */
+  padding-right: 50px;
+}
+
+.logo {
+  /* background-image: url('https://img.ibxk.com.br/2022/09/16/profissao-dev-16153228659058.jpg?ims=328x'); */
+  /* ALTURA */
+  height: 80px;
+  /* LARGURA */
+  width: 1270px;
+  /* COR DE TRÁS DO LOGO */
+  background-color: #2ec4b5;
+  /* NÃO REPLICAR A IMAGEM ATÉ COMPLETAR O ESPAÇAMENTO DA DIV */
+  background-repeat: no-repeat;
+  /* MUDA O TAMANHO DA IMAGEM ADICIONADA PARA FICAR DE ACORDO COM O TAMANHO DA DIV  */
+  background-size: cover;
+  /* ORGANIZA AS TAGS FILHAS */
+  display: flex;
+  /* ALINHA OS ITENS NO CENTRO */
+  align-items: center;
+  justify-content: center;
+
+  /* PEGA A DIV PAI E A IMAGEM QUE ESTÁ DENTRO DELA */
+}
+
+.logo img {
+  height: 50px;
+  /* Define a altura da imagem como 50 pixels */
+}
+
+
+/* DIV MENU */
+.menu {
+  /* COR DO FUNDO DA DIV MENU */
+  background-color: #f4a261;
+  /* COR DA LETRA */
+  color: white;
+  /* ORGANIZAR AS TAGS FILHAS/ FLEX:LINHA (ALGUMAS FUNÇÕES SÓ FUNCIONAM COM O DISPLAY FLEX) */
+  display: flex;
+  /* SEPARAÇÃO DOS ÍCONES COM PORCENTAGEM */
+  gap: 20%;
+  /* ALTURA */
+  height: 25px;
+  /* LARGURA */
+  width: 1270px;
+  align-items: center;
+  justify-content: center;
+  /* CHAMAR A FONTE NEGRITO */
+  font-family: 'Sen', sans-serif;
+
+}
+
+.logorodape {
+  /* background-image: url('https://img.ibxk.com.br/2022/09/16/profissao-dev-16153228659058.jpg?ims=328x'); */
+  /* ALTURA */
+  height: 80px;
+  /* LARGURA */
+  width: 1270px;
+  /* COR DE TRÁS DO LOGO */
+  background-color: #2ec4b6;
+  /* NÃO REPLICAR A IMAGEM ATÉ COMPLETAR O ESPAÇAMENTO DA DIV */
+  background-repeat: no-repeat;
+  /* MUDA O TAMANHO DA IMAGEM ADICIONADA PARA FICAR DE ACORDO COM O TAMANHO DA DIV  */
+  background-size: cover;
+  /* ORGANIZA AS TAGS FILHAS */
+  display: flex;
+  /* ALINHA OS ITENS NO CENTRO */
+  align-items: center;
+  justify-content: center;
+  /* ESPAÇAR AS LOGOS */
+  gap: 50px;
+}
+
+.sobreoenade {
+  /* ORGANIZA AS TAGS FILHAS NA DIV */
+  display: flex;
+  /* OS ITENS ADICIONADOS DICAM COMO COLUNA */
+  flex-direction: column;
+  /* QUANDO NÃO ESTÁ EM COLUNA ELE AJUSTA AS POSIÇÕES DE FORMA HORIZONTAL, JÁ EM COLUNA, FICA DE FORMA VERTICAL */
+  justify-content: start;
+  /* VAI PARA A ESQUEDA  */
+  padding-left: 50px;
+  /* VAI PARA A DIREITA */
+  padding-right: 50px;
+  /* CHAMAR A FONTE DO HTML PARA O CSS */
+  font-family: 'Sen', sans-serif;
+  /* JUSTIFICAR TEXTO */
+  text-align: justify;
+  /* COR DO FUNDO DA DIV MENU */
+  background-color: #ffffff;
+  /* ALTURA */
+  height: 800px;
+  /* LARGURA */
+  width: 1270px;
+}

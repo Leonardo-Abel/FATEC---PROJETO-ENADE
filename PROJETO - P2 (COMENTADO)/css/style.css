@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sen:wght@400;500;600;700;800&display=swap');
+/* Importa estilos de fontes do Google Fonts para serem usadas no documento. */
+
+/* Define variáveis de cor que podem ser utilizadas em todo o documento. */
+:root {
+    --main-blue: #2EC4B6;     /* Cor principal azul. */
+    --detail-blue: #CBF3F0;   /* Detalhe da cor azul. */
+    --main-orange: #E76F51;   /* Cor principal laranja. */
+    --detail-orange: #F4A261; /* Detalhe da cor laranja. */
+    --red: #9A031E;           /* Cor vermelha. */
+    --green: #1B4332;         /* Cor verde. */
+    --white: #FFF;            /* Cor branca. */
+    --gray: #F2F2F2;          /* Cor cinza. */
+}
+
+/* Define estilos padrão para todos os elementos no documento. */
+* {
+    padding: 0;                   /* Remove o preenchimento padrão. */
+    margin: 0;                    /* Remove as margens padrão. */
+    box-sizing: border-box;       /* Garante que a largura e altura incluam o preenchimento e a borda, não apenas o conteúdo. */
+    font-family: 'Sen', sans-serif; /* Define a fonte padrão para todo o documento. */
+}
+
+/* Remove a decoração de texto (sublinhado) dos links. */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Remove os marcadores de lista de listas não ordenadas e ordenadas. */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove margem e preenchimento padrão para cabeçalhos h5 e parágrafos p. */
+h5, p {
+    margin-bottom: 0;  /* Remove a margem inferior padrão. */
+    padding-bottom: 0; /* Remove o preenchimento inferior padrão. */
+}
+
+/* Estilizações comuns para botões. */
+button {
+    border: none;               /* Remove a borda padrão do botão. */
+    text-transform: uppercase;  /* Transforma o texto do botão em maiúsculas. */
+    padding: 8px 24px;          /* Adiciona preenchimento ao botão (8px acima/abaixo, 24px à esquerda/direita). */
+    border-radius: 8px;         /* Adiciona borda arredondada ao botão. */
+    font-weight: 800;           /* Define a espessura da fonte (bold). */
+}
+
+/* Define um tamanho mínimo de 100% da altura da viewport (100vh) para o html e o body. */
+html,
+body {
+    min-height: 1200px;
+    
+    /* Configura os elementos header, main e footer para ficarem em coluna. */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Configuração para o header e footer não crescerem, mantendo o tamanho automático. */
+header,
+footer {
+    flex-grow: 0;      /* Impede o crescimento do header e footer. */
+    flex-basis: auto;  /* Define a base de tamanho como automático. */
+}
+
+/* Configuração para o main crescer e ocupar o espaço restante, mantendo o tamanho automático. */
+main {
+    flex-grow: 1;      /* Permite que o main cresça e ocupe o espaço restante. */
+    flex-basis: auto;  /* Define a base de tamanho como automático. */
+}
+
+/* Estiliza os elementos com a classe .referencia e .fonte-enade. */
+.referencia,
+.fonte-enade {
+    font-size: 12px;   /* Define o tamanho da fonte como 12 pixels. */
+    text-align: end;   /* Alinha o texto à direita dentro do elemento. */
+}
+
+.logorodape {
+  /* background-image: url('https://img.ibxk.com.br/2022/09/16/profissao-dev-16153228659058.jpg?ims=328x'); */
+  /* ALTURA */
+  height: 80px;
+  /* LARGURA */
+  width: 100vw;
+  /* COR DE TRÁS DO LOGO */
+  background-color: #2ec4b6;
+  /* ORGANIZA AS TAGS FILHAS */
+  display: flex;
+  /* ALINHA OS ITENS NO CENTRO */
+  align-items: center;
+  /* JUSTIFICA OS ITENS NO CENTRO */
+  justify-content: center;   
+  /* ESPAÇAR AS LOGOS */
+  gap: 80px;
+}
+
+.logorodape a {
+    /* ORGANIZA AS TAGS FILHAS */
+    display: flex;
+    /* ALINHA OS ITENS NO CENTRO */
+    align-items: center;
+    /* JUSTIFICA OS ITENS NO CENTRO */
+    justify-content: center;    
+    /* ALTURA */
+    height: 100%;
+}
+
+/* Estiliza os elementos com a classe .img-logo. */
+.img-logo {
+    max-height: 70%;   /* Define a altura máxima como 70% do tamanho do elemento pai. */
+}
+
+header {
+    /* ORGANIZA AS TAGS FILHAS NA DIV */
+    display: flex;
+    /* OS ITENS ADICIONADOS DICAM COMO COLUNA */
+    flex-direction: column;
+    /* OS ITENS VÃO PARA O COMEÇO */
+    /* QUANDO NÃO ESTÁ EM COLUNA ELE AJUSTA AS POSIÇÕES DE FORMA HORIZONTAL, JÁ EM COLUNA, FICA DE FORMA VERTICAL */
+    justify-content: center;
+    /* QUANDO NÃO ESTÁ EM COLUNA ELE AJUSTA AS POSIÇÕES DE FORMA VERTICAL, JÁ EM COLUNA, FICA DE FORMA HORIZONTAL */
+    align-items: center;
+    /* COR DE TRÁS DO LOGO */
+    background-color: #2ec4b6;
+    /* PADDIND DE 20 PIXELS */
+    padding: 20px 0;
+}

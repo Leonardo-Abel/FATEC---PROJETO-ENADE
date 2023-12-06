@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--Essa declaração define o tipo de documento como HTML5.-->
+<html lang="pt-br">
+<!-- A tag html é o elemento raiz de um documento HTML e contém todos os outros elementos HTML. O atributo lang define o idioma do documento como português do Brasil. -->
+
+<head>
+    <!-- A tag head fornece informações sobre o documento HTML e contém metadados, como informações sobre o autor, links para arquivos de estilo e scripts, entre outros. -->
+    <meta charset="UTF-8">
+    <!-- Esta tag define a codificação de caracteres para o documento como UTF-8, que é uma codificação capaz de codificar todos os caracteres possíveis em Unicode. -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Este meta tag é comum em documentos HTML antigos e é usada para fornecer instruções para o Internet Explorer sobre a renderização da página. O valor "ie=edge" instrui o IE a usar a versão mais recente do mecanismo de renderização disponível. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A tag meta com o atributo name definido como "viewport" é usada para controlar as propriedades da janela de visualização no dispositivo. Aqui, width=device-width indica que a largura da janela de visualização deve seguir a largura do dispositivo, e initial-scale=1.0 define o nível de zoom inicial ao carregar a página. -->
+    <title>Resultados</title>
+    <!-- A tag title define o título da página exibido na barra de título do navegador ou na guia. -->
+    <link rel="stylesheet" href="../css/resultado.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/resultado.js" defer type="module"></script>
+    <!-- Esta linha cria um link entre o documento HTML e um arquivo de estilo externo, no caso, "style.css". Isso permite que o navegador carregue o arquivo de estilo e aplique o estilo especificado ao conteúdo da página. -->
+</head>
+<!-- A tag de fechamento </head> encerra a seção de cabeçalho do documento HTML. -->
+
+<body>
+    <!-- A tag <body> define o corpo principal do documento HTML, onde todo o conteúdo visível na página é colocado. -->
+    <header>
+        <!-- DIV DA LOGO -->
+        <div class="logo">
+        <!-- Tag img é usada para incorporar uma imagem. O atributo src especifica o caminho ou URL da imagem, neste caso, "../imgs/logo_enade_completo.svg". -->
+          <img src="../imgs/logo_enade_completo.svg">
+        </div>
+    </header>
+    <!-- A tag </header> fecha a seção de cabeçalho. -->
+    <div class="titulo">
+            <p>Resultados</p>
+    </div>
+    <main>
+        <!-- A tag <main> define o conteúdo principal da página. -->
+        
+        <!-- A tag <div> com a classe "titulo" contém um parágrafo que exibe o título "Resultados". -->
+            <div class="retangulo">
+                <!-- A tag <div> com a classe "retangulo" é usada como um contêiner genérico para outras seções. -->   
+            <div class="indice">
+                <!-- A tag <div> com a classe "indice" é usada como um contêiner para outras seções relacionadas a índices. -->
+                <section class="acertos">
+                    <!-- A tag <section> com a classe "acertos" é usada para agrupar informações específicas sobre "acertos". -->
+                    <h2>ACERTOS</h2>
+                    <!-- A tag <h2> exibe o título "ACERTOS". -->
+                    <div class="pontuacao" id="acerto"></div>
+                    <!-- A tag <div> com a classe "pontuacao" e o id "acerto" exibe a pontuação atual no formato "12/35". -->
+                </section>
+                <!-- A tag </section> encerra a seção de "acertos". -->
+                <section class="erros">
+                    <!-- A tag <section> com a classe "erros" é usada para agrupar informações específicas sobre "erros". -->
+                    <h2>ERROS</h2>
+                    <!-- A tag <h2> exibe o título "ERROS". -->
+                    <div class="pontuacao" id="erro"></div>
+                    <!-- A tag <div> com a classe "pontuacao" e o id "erro" exibe a pontuação atual dos erros no formato "12/35". -->
+                </section> 
+            </div>
+            <!-- A tag </div> fecha o contêiner com a classe "indice". -->
+            <div class="tabela">
+                <!-- A tag <div> com a classe "tabela" é usada como um contêiner para a tabela. -->
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <td>QUESTÃO</td>
+                            <td>RESPOSTA DO ALUNO</td>
+                            <td>GABARITO DO ENADE</td>
+                        </tr>
+                    </thead>
+                </table>
+                <!-- A tag </table> encerra a tabela. -->
+            </div>
+            <!-- A tag </div> fecha o contêiner com a classe "tabela". -->
+            <div class="button">
+                <!-- Aqui, uma <div> (divisão) com a classe "button" está sendo criada. Essa <div> será usada para envolver o botão. -->
+                <button id="refazer_simulado">
+                    <!-- Dentro do botão, há um elemento <a> (link âncora) com um atributo href definido como "#" (um link vazio). Isso geralmente é usado para criar um link de ação, mesmo que não leve a uma nova página. -->
+                    <p>REFAZER SIMULADO</p>
+                    <!-- Dentro do link âncora, há um parágrafo que contém o texto "REFAZER SIMULADO". Este texto será exibido no botão como seu rótulo. -->
+                </button>
+                <!-- Esta tag de fechamento encerra a configuração do botão. -->
+            </div>
+            <!-- Finalmente, esta tag de fechamento encerra a <div> que envolve o botão. -->
+            <!-- A tag </div> fecha o contêiner com a classe "tabela". -->
+            <div class="button">
+                <!-- Aqui, uma <div> (divisão) com a classe "button" está sendo criada. Essa <div> será usada para envolver o botão. -->
+                <button>
+                    <!-- Esta tag inicia a configuração de um botão na página. Os botões são frequentemente usados para criar elementos interativos que podem ser clicados. -->
+                    <a href="./estatisticas.html">
+                        <!-- Dentro do botão, há um elemento <a> (link âncora) com um atributo href definido como "#" (um link vazio). Isso geralmente é usado para criar um link de ação, mesmo que não leve a uma nova página. -->
+                        <p>ESTATÍSTICAS</p>
+                        <!-- Dentro do link âncora, há um parágrafo que contém o texto "REFAZER SIMULADO". Este texto será exibido no botão como seu rótulo. -->
+                    </a>
+                    <!-- Esta tag de fechamento encerra o link âncora. -->
+                </button>
+                <!-- Esta tag de fechamento encerra a configuração do botão. -->
+            </div>
+            <!-- A tag </div> fecha o contêiner com a classe "tabela". -->
+            <div class="button">
+                <!-- Aqui, uma <div> (divisão) com a classe "button" está sendo criada. Essa <div> será usada para envolver o botão. -->
+                <button>
+                    <!-- Esta tag inicia a configuração de um botão na página. Os botões são frequentemente usados para criar elementos interativos que podem ser clicados. -->
+                    <a href="../index.html">
+                        <!-- Dentro do botão, há um elemento <a> (link âncora) com um atributo href definido como "#" (um link vazio). Isso geralmente é usado para criar um link de ação, mesmo que não leve a uma nova página. -->
+                        <p>SAIR</p>
+                        <!-- Dentro do link âncora, há um parágrafo que contém o texto "REFAZER SIMULADO". Este texto será exibido no botão como seu rótulo. -->
+                    </a>
+                    <!-- Esta tag de fechamento encerra o link âncora. -->
+                </button>
+                <!-- Esta tag de fechamento encerra a configuração do botão. -->
+            </div>
+            <!-- Finalmente, esta tag de fechamento encerra a <div> que envolve o botão. -->
+        </div>
+        <section class="graficos">
+        <!-- Início da seção com a classe "graficos" -->
+            <h5>QUANTIDADE</h5>
+            <!-- Título da seção -->
+            <div class="dados">
+            <!-- Início de um contêiner com a classe "dados" -->
+                <h5>ACERTOS: </h5>
+                <!-- Título dentro do contêiner "dados" -->
+                <div class="grafico">
+                    <!-- A tag <div> com a classe "grafico" é usada como um contêiner para o gráfico relacionado. -->
+                    <div class="acerto" id="acerto_grafico"></div>
+                    <!-- A tag <div> com a classe "acerto" representa um gráfico específico, possivelmente exibindo visualmente os acertos de alguma forma. -->
+                </div>
+                <!-- A tag </div> fecha o contêiner com a classe "acertos". -->
+            </div>
+
+            <div class="dados">
+            <!-- Início de um contêiner com a classe "dados" -->
+                <h5>ERROS: </h5>
+                <!-- Título dentro do contêiner "dados" -->
+                <div class="grafico">
+                    <!-- A tag <div> com a classe "grafico" é usada como um contêiner para o gráfico relacionado aos erros. -->
+                    <div class="erro" id="erro_grafico"></div>
+                    <!-- A tag <div> com a classe "erro" representa um gráfico específico, possivelmente exibindo visualmente os erros de alguma forma. -->
+                </div>
+            </div>
+
+            <br>
+            <!-- Quebra de linha -->
+
+            <span>Fonte: Os autores</span>
+            <!-- A tag <span> é utilizada para aplicar estilo ou manipular trechos de texto, neste caso, exibindo a fonte "Os autores". -->
+        </section>
+    </main>
+</body>
+
+</html>
+<!-- O restante do código HTML fecha os elementos pai: </div> fecha a <div> da classe "button", </main> encerra a seção principal da página e </body> encerra o corpo da página, e </html> encerra o documento HTML. -->

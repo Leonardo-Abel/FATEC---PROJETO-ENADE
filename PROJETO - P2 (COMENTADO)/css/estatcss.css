@@ -1,0 +1,135 @@
+/* * {
+margin: 0;
+} */
+/* Aqui, o seletor universal * é utilizado para aplicar as propriedades a todos os elementos no documento HTML. A propriedade margin está sendo definida como 0 para remover quaisquer margens padrão dos elementos, o que pode resultar em um espaçamento indesejado entre os elementos e as bordas da página. */
+
+body {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+    background-color: #F2F2F2;
+}
+/* Essas instruções estão aplicando estilos específicos ao elemento body. No entanto, essas propriedades normalmente se aplicam a elementos com display flex. As propriedades justify-content: center; e align-items: center; estão sendo utilizadas para centralizar o conteúdo horizontal e verticalmente no contêiner pai. No entanto, para que essas propriedades tenham efeito, o display do elemento deve ser definido como flex ou grid. */
+
+
+header {
+    width: 100%;
+    height: 110px;
+    flex-shrink: 0;
+    background: var(--main-blue, #2EC4B6);
+    justify-content: center;
+}
+/* width: 100%;: Define a largura do elemento header como 100% da largura do seu contêiner pai.
+height: 110px;: Define a altura do elemento header como 110 pixels.
+flex-shrink: 0;: Impede que o elemento header encolha em relação ao espaço disponível.
+background: var(--main-blue, #2EC4B6);: Define o plano de fundo do elemento header. Ele usa a cor definida pela variável --main-blue se estiver definida, caso contrário, usa a cor de fallback #2EC4B6.
+justify-content: center;: Centraliza o conteúdo horizontalmente dentro do elemento header. */
+
+
+nav {
+    display: flex;
+    padding: 18.072px 44.611px 0px 44.538px;
+    justify-content: center;
+    align-items: center;
+}
+/* display: flex;: Define o elemento nav como um contêiner flexível.
+padding: 18.072px 44.611px 0px 44.538px;: Define o preenchimento (padding) para o elemento nav com 18.072 pixels no topo, 44.611 pixels à direita, 0 pixels na parte inferior e 44.538 pixels à esquerda.
+justify-content: center;: Centraliza o conteúdo horizontalmente dentro do elemento nav.
+align-items: center;: Centraliza o conteúdo verticalmente dentro do elemento nav. */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* display: flex;: Define o contêiner main como um contêiner flexível, permitindo que seus itens filhos sejam organizados de acordo com as propriedades de flexbox.
+flex-direction: column;: Define a direção dos itens dentro do contêiner main como uma coluna, o que significa que os itens serão dispostos de cima para baixo.
+width: 100%;: Define a largura do contêiner main como 100% da largura do seu contêiner pai.
+justify-content: center;: Centraliza os itens horizontalmente dentro do contêiner main.
+align-items: center;: Centraliza os itens verticalmente dentro do contêiner main.
+background-image: url(./wave.svg);: Define a imagem de fundo do contêiner main como o arquivo wave.svg que está localizado na mesma pasta que o arquivo HTML.
+background-repeat: no-repeat;: Faz com que a imagem de fundo não se repita.
+background-size: cover;: Ajusta o tamanho da imagem de fundo para cobrir todo o contêiner, mantendo a proporção da imagem.
+background-attachment: fixed;: Fixa a imagem de fundo para que o restante do conteúdo possa rolar sobre ela. */
+
+
+h2 {
+    color: #000000;
+    /* Define a cor do texto para preto (#000000) */
+    text-align: center;
+    /* Define o alinhamento do texto como centralizado */
+}
+
+.stats-container {
+    width: 280px;
+    /* Define a largura do contêiner como 280 pixels */
+    background-color: #fff;
+    /* Define a cor de fundo como branco (#fff) */
+    border-radius: 5px;
+    /* Adiciona borda arredondada com raio de 5 pixels */
+    padding: 20px;
+    /* Adiciona preenchimento interno de 20 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra ao redor do contêiner */
+    margin-top: 20px;
+    /* Define a margem superior como 20 pixels e centraliza horizontalmente usando margin:auto */
+    margin: 20px auto; 
+    /* Atualizado para centralizar horizontalmente */
+}
+
+.stat-item {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    justify-content: space-between;
+    /* Distribui o espaço disponível entre os itens, colocando um à esquerda e outro à direita */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    margin: 10px 0;
+    /* Define a margem superior e inferior como 10 pixels, e a margem lateral como 0 */
+}
+
+.stat-label {
+    font-weight: bold;
+    /* Define o peso da fonte como negrito (bold) */
+    color: #333;
+    /* Define a cor do texto como um tom de cinza escuro (#333) */
+}
+
+.bar {
+    background-color: #2c3e50;
+    /* Define a cor de fundo como um tom de azul escuro (#2c3e50) */
+    height: 20px;
+    /* Define a altura do elemento como 20 pixels */
+    width: 200px;
+    /* Define a largura do elemento como 200 pixels */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas com raio de 5 pixels */
+    overflow: hidden;
+    /* Define que o conteúdo que ultrapassar as bordas do elemento será ocultado */
+}
+
+.bar-inner {
+    height: 100%;
+    /* Define a altura do elemento como 100% da altura do contêiner pai */
+    background-color: #2EC4B6 ;
+    /* Define a cor de fundo como um tom de verde (#2EC4B6) */
+    transition: width 0.5s;
+    /* Adiciona uma transição suave de 0.5 segundos para a propriedade de largura (width) */
+}
+
+.value {
+    font-weight: bold;
+    /* Define o peso da fonte como negrito (bold) */
+    margin-left: 10px;
+    /* Define uma margem à esquerda de 10 pixels */
+    color: #333;
+    /* Define a cor do texto como um tom de cinza escuro (#333) */
+}

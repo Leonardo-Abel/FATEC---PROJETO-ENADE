@@ -1,0 +1,188 @@
+main {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    background-color: var(--gray);
+    /* Define a cor de fundo como a variável --gray */
+}
+
+.paragrafo img, .numTXT img {
+    width: 50%;
+    /* Define a largura da imagem como 50% do contêiner pai */
+}
+
+.conteudo {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    background-image: url('../imgs/wave.svg');
+    /* Define uma imagem de fundo usando o arquivo "wave.svg" localizado na pasta "../imgs/" */
+    background-repeat: no-repeat;
+    /* Evita que a imagem de fundo seja repetida */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem de fundo para cobrir completamente o contêiner */
+}
+
+.pergunta {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    align-items: center;
+    /* Alinha os itens no centro horizontal do contêiner */
+    margin-bottom: 80px;
+    /* Adiciona uma margem inferior de 80 pixels */
+}
+
+.pergunta section {
+    width: 75%;
+    /* Define a largura da seção como 75% do contêiner pai */
+    background-color: #FFFB;
+    /* Define a cor de fundo como uma tonalidade de branco (cor transparente) */
+    border-radius: 0 0 28px 28px;
+    /* Adiciona bordas arredondadas apenas na parte inferior da seção */
+    border-bottom: 4px solid var(--detail-orange);
+    /* Adiciona uma borda sólida na parte inferior com 4 pixels de largura e cor definida pela variável --detail-orange */
+}
+
+.top {
+    background-color: var(--detail-orange);
+    /* Define a cor de fundo como a variável --detail-orange */
+    color: var(--white);
+    /* Define a cor do texto como a variável --white (branco) */
+    text-transform: uppercase;
+    /* Transforma o texto para maiúsculas */
+    font-weight: 800;
+    /* Define o peso da fonte como 800 (extra bold) */
+    padding: 12px 40px;
+    /* Adiciona espaçamento interno de 12 pixels na parte superior e inferior, e 40 pixels nas laterais */
+}
+
+.corpo-pergunta {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    gap: 12px;
+    /* Define o espaçamento vertical entre os itens como 12 pixels */
+    padding: 28px 20px;
+    /* Adiciona espaçamento interno de 28 pixels na parte superior e inferior, e 20 pixels nas laterais */
+}
+
+.responder {
+    font-size: 14px;
+    /* Define o tamanho da fonte como 14 pixels */
+    color: var(--white);
+    /* Define a cor do texto como a variável --white (branco) */
+    background-color: var(--detail-orange);
+    /* Define a cor de fundo como a variável --detail-orange */
+    margin-top: -19px;
+    /* Desloca o elemento para cima (para cobrir parte do elemento superior) */
+}
+
+.responder:hover {
+    background-color: var(--main-orange);
+    /* Define a cor de fundo como a variável --detail-orange */
+}
+
+.finalizar {
+    background-color: #FFF5;
+    /* Define a cor de fundo como uma tonalidade de branco (cor transparente) */
+    border: 4px solid var(--main-blue);
+    /* Adiciona uma borda sólida com 4 pixels de largura e cor definida pela variável --main-blue */
+    color: var(--main-blue);
+    /* Define a cor do texto como a variável --main-blue */
+    margin: 80px 0 0 40px;
+    /* Define as margens superior como 80 pixels, inferior como 0, esquerda como 40 pixels e direita como 0 */
+    font-size: 16px;
+    /* Define o tamanho da fonte como 16 pixels */
+}
+
+.finalizar:hover {
+    background-color: var(--main-blue);
+    /* Altera a cor de fundo para a variável --main-blue quando em hover */
+    color: var(--white);
+    /* Altera a cor do texto para a variável --white (branco) quando em hover */
+}
+
+.textos {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    gap: 32px;
+    /* Define o espaçamento vertical entre os itens como 32 pixels */
+}
+
+.texto {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    gap: 8px;
+    /* Define o espaçamento vertical entre os itens como 8 pixels */
+}
+
+.numTXT {
+    font-weight: 700;
+    /* Define o peso da fonte como 700 (bold) */
+}
+
+.titulo {
+    font-weight: 600;
+    /* Define o peso da fonte como 600 */
+}
+
+.titulo, .paragrafo, .frase {
+    font-size: 14px;
+    /* Define o tamanho da fonte como 14 pixels */
+}
+
+.referencia, .fonte-enade {
+    font-size: 12px;
+    /* Define o tamanho da fonte como 12 pixels */
+    text-align: end;
+    /* Alinha o texto à direita (end) */
+}
+
+.alternativas {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna, empilhando verticalmente */
+    gap: 4px;
+    /* Define o espaçamento vertical entre os itens como 4 pixels */
+}
+
+.nav-buttons {
+    display: flex;
+    /* Define o modelo de layout como flexível */
+    justify-content: space-between;
+    /* Distribui o espaço entre os itens, colocando o máximo possível entre eles */
+    width: 100%;
+    /* Define a largura como 100% da largura do contêiner pai */
+    margin-top: 28px;
+    /* Adiciona uma margem superior de 28 pixels */
+}
+
+.nav-buttons a {
+    border: 2px solid var(--detail-orange);
+    /* Adiciona uma borda sólida com 2 pixels de largura e cor definida pela variável --detail-orange */
+    border-radius: 24px;
+    /* Adiciona bordas arredondadas com um raio de 24 pixels */
+    padding: 4px 12px;
+    /* Adiciona espaçamento interno de 4 pixels na parte superior e inferior, e 12 pixels nas laterais */
+    text-transform: uppercase;
+    /* Transforma o texto para maiúsculas */
+    font-weight: 700;
+    /* Define o peso da fonte como 700 (bold) */
+    color: var(--detail-orange);
+    /* Define a cor do texto como a variável --detail-orange */
+}
+
+.nav-buttons a:hover {
+    background-color: var(--detail-orange);
+    /* Altera a cor de fundo para a variável --detail-orange quando em hover */
+    color: var(--white);
+    /* Altera a cor do texto para a variável --white (branco) quando em hover */
+}

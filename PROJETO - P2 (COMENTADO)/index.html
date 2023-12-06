@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- Esta linha define o tipo de documento como HTML5. O DOCTYPE (Document Type Definition) declara a versão do HTML utilizada no documento, permitindo que os navegadores interpretem corretamente o código. -->
+<html lang="pt-br">
+<!-- Esta linha inicia o elemento HTML, que é o elemento raiz de um documento HTML. O atributo lang é usado para especificar o idioma do documento, neste caso, é "pt-br" indicando que o idioma é o português do Brasil. -->
+
+<head>
+  <!-- IMPORTAR A FONTE PELO HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Cria um link de pré-conexão com o domínio "https://fonts.googleapis.com". -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Cria um link de pré-conexão com o domínio "https://fonts.gstatic.com" indicando que a conexão deve ser cross-origin. -->
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <!-- Importa a folha de estilos da fonte "Sen" hospedada no Google Fonts. -->
+  
+  <!-- IMPORTAR A FONTE NEGRITO PELO HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Cria um link de pré-conexão com o domínio "https://fonts.googleapis.com". -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Cria um link de pré-conexão com o domínio "https://fonts.gstatic.com" indicando que a conexão deve ser cross-origin. -->
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+  <!-- Importa a folha de estilos da fonte "Sen" com peso (weight) 700 (negrito), hospedada no Google Fonts. -->
+
+  <!-- Define o conjunto de caracteres como UTF-8 para garantir a correta exibição de caracteres especiais. -->
+  <meta charset="UTF-8">
+  <!-- Define a compatibilidade com o Internet Explorer e o uso da última versão do mecanismo de renderização disponível. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Configura a viewport para que a largura seja igual à largura do dispositivo, e a escala inicial seja 1.0. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Define o título da página. -->
+  <title>ENADE 2021 - Letras Inglês Licenciatura</title>
+  <!-- Adiciona um ícone à aba do navegador. -->
+  <link rel="shortcut icon" type="imagem/x-icon" href="../html/logo-enade.svg" />
+  <!-- Importa estilos CSS para a página principal e outros estilos gerais. -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <!-- Adiciona um script que carrega os ícones FontAwesome. -->
+  <script src="https://kit.fontawesome.com/83b15db74c.js" crossorigin="anonymous"></script>
+</head>
+ 
+<body id="body">
+  <!-- SEÇÃO DO CORPO DA PÁGINA -->
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <header id="header">
+      <!-- DIV DA LOGO -->
+      <div class="logo">
+        <!-- INSERE A IMAGEM DA LOGO -->
+        <img src="./imgs/logo_enade_completo.svg">
+      </div>
+
+      <!-- DIV DO MENU DE NAVEGAÇÃO -->
+      <div class="menu">
+        <!-- LINK PARA A PÁGINA DE PROVA -->
+        <!-- <a href="./pages/prova.html?questao=1"> -->
+        <a href="./pages/prova.html?questao=1">
+          <!-- TEXTO "PROVA" NO MENU -->
+          <h3>PROVA</h3>
+        </a>
+
+        <!-- LINK PARA A PÁGINA DE INSTRUÇÕES -->
+        <a href="./pages/instrucoes.html">
+          <!-- TEXTO "INSTRUÇÕES" NO MENU -->
+          <h3>INSTRUÇÕES</h3>
+        </a>
+
+        <!-- LINK PARA A PÁGINA DE CRÉDITOS -->
+        <a href="./pages/creditos.html">
+          <!-- TEXTO "CRÉDITOS" NO MENU -->
+          <h3>CRÉDITOS</h3>
+        </a>
+      </div>
+
+      <!-- criando uma div com o id "menu-responsivo", para diexar o menu resxponsivo em outros aparelhos com telas menores -->
+      <div id="menu-responsivo">
+        <!-- criando um botão do menu responsivo, com o id "botao-menu-responsivo" para que ao clicar os itens, que antes eram inline, ficam um debaixo do outro -->
+        <button id="botao-menu-responsivo">MENU</button> 
+        <!-- criando uma navegação para o menu responsivo, com o id "nav-menu-responsivo"-->
+        <nav id="nav-menu-responsivo">
+          <!-- criando uma lista não ordenada para colocar os itens no menu -->
+          <ul>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="./pages/prova.html?questao=1">PROVA</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="./pages/instrucoes.html">INSTRUÇÕES</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="./pages/creditos.html">CRÉDITOS</a></li>
+          </ul>  <!-- fechando a tag da lista não ordenada -->
+        </nav>  <!-- fechando a tag "nav" da navegação-->
+      </div>  <!-- fechando a div do menu responsivo -->
+  </header> <!-- FIM DO CABEÇALHO -->
+  
+  <main>
+  <!-- SEÇÃO PRINCIPAL DA PÁGINA -->
+    <div class="projeto">
+    <!-- DIV PARA O PROJETO -->
+      <br>
+      <!-- QUEBRA DE LINHA -->
+      <h1>PROJETO</h1>
+      <!-- TÍTULO PRINCIPAL DO PROJETO -->
+      <br>
+      <!-- QUEBRA DE LINHA -->
+      <p>
+      <!-- PARÁGRAFO DE DESCRIÇÃO DO PROJETO -->
+        Este projeto da faculdade FATEC, do curso superior de tecnologia em Análise e Desenvolvimento de Sistemas (ADS), tem como objetivo principal a criação de um ambiente de treinamento e simulação baseado na Prova Nacional do ENADE (Exame Nacional de Desempenho de Estudantes), tendo como base a prova de 2021. Essa iniciativa visa aprimorar a preparação dos estudantes para o ENADE, um exame crucial que avalia o desempenho e a qualidade dos cursos de ensino superior no Brasil. Através da recriação deste ambiente de perguntas e respostas, pretendemos oferecer aos estudantes uma ferramenta eficaz para se prepararem e se familiarizarem com o formato da prova, contribuindo assim para o seu sucesso acadêmico.
+        <!-- TEXTO DESCRITIVO DO PROJETO -->
+      </p>
+      <span class="fonte-enade">Fonte: Os autores</span>
+      <!-- SPAN COM CLASSE DE ESTILO "fonte-enade" PARA INDICAR A FONTE DO TEXTO -->
+    </div>
+    <!-- FIM DA DIV PARA O PROJETO -->
+
+    <div class="sobre">
+    <!-- DIV DA CLASSE "SOBRE" -->
+      <h1>SOBRE A PROVA</h1>
+      <!-- TÍTULO PRINCIPAL DO PROJETO -->
+      <br>
+      <!-- QUEBRA DE LINHA -->
+      <p>
+      <!-- PARÁGRAFO DE DESCRIÇÃO DA PROVA -->
+        Segundo publicado no site do ENADE: “A prova do Enade afere o desempenho dos estudantes em relação aos
+        conteúdos programáticos previstos nas Diretrizes Curriculares Nacionais ou no Catálogo Nacional de Cursos
+        Superiores de Tecnologia do respectivo curso de graduação, suas habilidades para ajustamento às exigências
+        decorrentes da evolução do conhecimento e suas competências para compreender temas exteriores ao âmbito
+        específico de sua profissão, ligados à realidade brasileira e mundial e a outras áreas do conhecimento.
+        <br>
+        <!-- QUEBRA DE LINHA -->
+        <br>
+        <!-- QUEBRA DE LINHA -->
+        As provas são compostas por uma parte de Formação Geral, comum aos cursos de todas as áreas, e uma parte de
+        Componente Específico, própria de cada área de avaliação. A parte de Formação Geral tem 10 questões, sendo
+        duas discursivas e oito de de múltipla escolha, envolvendo situações-problema e estudos de casos. A concepção
+        dos itens é balizada pelos princípios dos Direitos Humanos. As questões discursivas avaliam aspectos como
+        clareza, coerência, coesão, estratégias argumentativas, utilização de vocabulário adequado e correção
+        gramatical do texto. Já a parte de Componente Específico de cada área de avaliação tem 30 questões, sendo três
+        discursivas e 27 de múltipla escolha, envolvendo situações-problema e estudos de casos.”
+      </p>
+      <span class="fonte-enade">Fonte:
+        https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos</span>
+        <!-- SPAN COM CLASSE DE ESTILO "fonte-enade" PARA INDICAR A FONTE DO TEXTO -->
+    </div>
+
+    <div class="downloads">
+      <!-- DIV PARA A SEÇÃO DE DOWNLOADS -->
+      <a target="_blank" href="https://download.inep.gov.br/enade/provas_e_gabaritos/2021_PV_licenciatura_letras_ingles.pdf" class="download" target="_blank">
+        download prova
+      </a>
+      <!-- LINK DE DOWNLOAD COM CLASSE "download" E ABRINDO EM UMA NOVA JANELA -->
+      <a  target="_blank" href="https://download.inep.gov.br/enade/provas_e_gabaritos/2021_GB_licenciatura_letras_ingles.pdf" class="download" target="_blank">
+        download gabarito
+      </a>
+      <!-- O CONTEÚDO DO LINK PODE SER ADICIONADO AQUI, COMO UM ÍCONE OU TEXTO -->
+    </div>
+  </main>
+  <footer>
+    <!-- DIV DOS RODAPÉ -->
+    <div class="logorodape">
+      <!-- IMAGEM DA LOGO DO SITE CPS FATEC (dentro da tag da img está o link, para que
+  ao clicar, redirecione para o site) -->
+      <a  target="_blank" href="https://www.cps.sp.gov.br/fatec/" target="_blank">
+        <img class="img-logo" src="imgs/logo-cps.png">
+      </a>
+      <!-- IMAGEM DA LOGO DO SITE FATEC CARAPICUÍBA (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+      <a  target="_blank" href="https://www.fateccarapicuiba.edu.br/" target="_blank">
+        <img class="img-logo" src="imgs/logo-fatec-carapicuiba.png">
+      </a>
+      <!-- IMAGEM DA LOGO DA CIDADE DE SÃO PAULO (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+      <a  target="_blank" href="https://www.saopaulo.sp.gov.br/" target="_blank">
+        <img class="img-logo" src="imgs/logo-saopaulo.png">
+      </a>
+    </div>
+  </footer>
+
+  <!-- importanto o código do javascript do menu responsivo -->
+  <script src="./js/menuReponsivo.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- declarando o tipo do documento -->
+<!DOCTYPE html>
+<!-- abrindo a tag para iniciar o html
+e declarando a língua -->
+<html lang="pt-br">
+<head>
+    <!-- IMPORTAR A FONTE PELO HTML -->
+    <meta charset="UTF-8">
+    <!-- declarando os códigos que serão aceitos na página (caracteres Unicode) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Este meta tag é comum em documentos HTML antigos e é usada para fornecer instruções para o Internet Explorer sobre a renderização da página. O valor "ie=edge" instrui o IE a usar a versão mais recente do mecanismo de renderização disponível. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A tag meta com o atributo name definido como "viewport" é usada para controlar as propriedades da janela de visualização no dispositivo. Aqui, width=device-width indica que a largura da janela de visualização deve seguir a largura do dispositivo, e initial-scale=1.0 define o nível de zoom inicial ao carregar a página. -->
+    <link rel="shortcut icon" type="imagem/x-icon" href="../imgs/logo-enade.svg">
+    <!-- Tag com a importação de um ícone do logo cortado -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- CHAMA O ARQUIVO DE ESTILIZAÇÃO GERAL "style.css" -->
+    <link rel="stylesheet" href="../css/prova.css">
+    <!-- CHAMA O ARQUIVO DE ESTILIZAÇÃO ESPECÍFICO DIRECIONADO À PAGINA "prova.css" -->
+    <script src="../js/questoes.js" defer type="module"></script>
+    <!-- CHAMA O ARQUIVO "questoes.js" PARA A IMPLEMENTAÇÃO DO SISTEMA -->
+    <script src="../js/correcao.js" defer type="module"></script>
+    <!-- CHAMA O ARQUIVO "correção.js" PARA A IMPLEMENTAÇÃO DO SISTEMA -->
+    <script src="../js/finalizar.js" defer type="module"></script>
+    <!-- CHAMA O ARQUIVO "finalizar.js" PARA A IMPLEMENTAÇÃO DO SISTEMA -->
+    <script src="../js/teste.js" defer type="module"></script>
+    <!-- CHAMA O ARQUIVO "teste.js" PARA A IMPLEMENTAÇÃO DO SISTEMA -->
+    <!-- <script src="//fatecspgov.sharepoint.com///unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- CHAMA UMA FUNÇÃO QUE APRESENTA UM POP-UP NA TELA -->
+
+    <title>ENADE</title>
+</head>
+
+<body>
+    <header>
+        <!-- DIV DA LOGO -->
+        <div class="logo">
+          <img src="../imgs/logo_enade_completo.svg">
+        </div>
+    </header>
+    <main>
+    <!-- Div para representar a barra de progresso -->
+        <div class="progresso"></div>
+        <!-- Div principal para o conteúdo -->
+        <div class="conteudo">
+            <!-- Div para o menu de questões -->
+            <div class="menu-questoes" id="menu-questoes">
+                <!-- Botão para finalizar -->
+                <button class="finalizar" id="finalizar">
+                    finalizar
+                </button>
+                <!-- Botão para estatísticas -->
+                <button class="finalizar" id="estatisticas">
+                    estatisticas
+                </button>
+            </div>
+            <div class="pergunta">
+                <section>
+                    <!-- Div para a parte superior da pergunta -->
+                    <div class="top">
+                        <!-- Span para exibir o número ou identificador da questão -->
+                        <span id="questao"></span>
+                    </div>
+                    <!-- Div para o corpo da pergunta -->
+                    <div class="corpo-pergunta" id="corpo-pergunta">
+                        <!-- Aqui você pode adicionar o conteúdo da pergunta -->
+                    </div>
+                </section>
+                <!-- Botão para responder à pergunta -->
+                <button class="responder" id="responder">
+                    responder
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- DIV DOS RODAPÉ -->
+        <div class="logorodape">
+            <!-- IMAGEM DA LOGO DO SITE CPS FATEC (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+            <a href="https://www.cps.sp.gov.br/fatec/">
+                <img class="img-logo" src="../imgs/logo-cps.png">
+            </a>
+            <!-- IMAGEM DA LOGO DO SITE FATEC CARAPICUÍBA (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+            <a href="https://www.fateccarapicuiba.edu.br/">
+                <img class="img-logo" src="../imgs/logo-fatec-carapicuiba.png">
+            </a>
+            <!-- IMAGEM DA LOGO DA CIDADE DE SÃO PAULO (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+            <a href="https://www.saopaulo.sp.gov.br/">
+                <img class="img-logo" src="../imgs/logo-saopaulo.png">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

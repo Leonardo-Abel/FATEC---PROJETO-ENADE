@@ -1,0 +1,240 @@
+/* usando o css para página inteira */
+header {
+  /* AJUSTANDO O PADDING DA PÁGINA PARA FICAR APENAS NO TOPO */
+  padding: 20px 0 0 0;
+  /*
+    O atributo 'padding' define o espaço interno do elemento, 
+    sendo especificado em sentido horário como: 
+    padding: cima direita baixo esquerda;
+    Neste caso, 20 pixels no topo, 0 pixels à direita, 
+    0 pixels na parte inferior e 0 pixels à esquerda.
+  */
+
+  /* SEPARANDO OS ELEMENTOS EM 20 PIXELS */
+  gap: 20px;
+   /*
+    O atributo 'gap' é usado para definir o espaçamento entre os elementos 
+    dentro do contêiner (nesse caso, o elemento 'header').
+    Este valor de 20 pixels especifica a distância entre os elementos 
+    dentro do 'header', proporcionando um espaçamento uniforme.
+  */
+}
+
+/* Estilizando o elemento 'main' */
+main {
+  /* Define o modelo de layout do 'main' como um contêiner flexível */
+  display: flex;
+  /* Define a direção principal dos itens no contêiner flexível como coluna */
+  flex-direction: column;
+  /* Define o espaçamento entre os filhos diretos (itens) do 'main' como 40 pixels */
+  gap: 40px;
+}
+
+/* Estilizando a classe 'menu' e os links âncora ('a') dentro dela */
+.menu a {
+  /* Define a cor do texto dos links como a variável CSS '--white' */
+  color: var(--white);
+}
+
+/* Estilizando a classe 'menu' */
+.menu {
+  /* Define a cor de fundo do elemento 'menu' como #f4a261 (um tom de laranja) */
+  background-color: #f4a261;
+  /* Define a cor do texto dentro do elemento 'menu' como branco */
+  color: white;
+   /* Configura o modelo de layout do elemento 'menu' como um contêiner flexível */
+  display: flex;
+  /* Define o espaçamento entre os filhos diretos do elemento 'menu' como 20% da largura disponível */
+  gap: 20%;
+  /* Define a altura do elemento 'menu' como 25 pixels */
+  height: 25px;
+  /* Define a largura do elemento 'menu' como 100% da largura disponível */
+  width: 100%;
+  /* Alinha os itens (filhos diretos) verticalmente no centro do elemento 'menu' */
+  align-items: center;
+  /* Alinha os itens (filhos diretos) horizontalmente no centro do elemento 'menu' */
+  justify-content: center;
+  /* Define a fonte utilizada para o texto dentro do elemento 'menu' como 'Sen' ou, se não disponível, uma fonte sans-serif genérica */
+  font-family: 'Sen', sans-serif;
+}
+
+/* Estilizando a classe 'creditos' */
+.creditos
+{
+  /* Configura o modelo de layout do elemento 'creditos' como um contêiner flexível */
+  display: flex;
+  /* Define a direção principal dos itens no contêiner flexível como coluna */
+  flex-direction: column;
+  /* Alinha os itens no início do eixo principal (verticalmente no topo) dentro do contêiner 'creditos' */
+  justify-content: start;
+  /* Adiciona um preenchimento à esquerda e à direita do elemento 'creditos' de 50 pixels */
+  padding-left: 50px;
+  padding-right: 50px;
+  /* Define a fonte utilizada para o texto dentro do elemento 'creditos' como 'Sen' ou, se não disponível, uma fonte sans-serif genérica */
+  font-family: 'Sen', sans-serif;
+  /* Alinha o texto justificado dentro do elemento 'creditos' */
+  text-align: justify;
+  /* Define a cor de fundo do elemento 'creditos' como #ffffff (branco) */
+  background-color: #ffffff;
+  /* Define a largura do elemento 'creditos' como 100% da largura disponível */
+  width: 100%;
+}
+
+/* Estilizando a classe 'creditos-autores' */
+.creditos-autores
+{
+  /* Configura o modelo de layout do elemento 'creditos-autores' como um contêiner flexível */
+  display: flex;
+  /* Define a direção principal dos itens no contêiner flexível como coluna */
+  flex-direction: column;
+  /* Alinha os itens no início do eixo principal (verticalmente no topo) dentro do contêiner 'creditos-autores' */
+  justify-content: start;
+  /* Adiciona um preenchimento à esquerda e à direita do elemento 'creditos-autores' de 50 pixels */
+  padding-left: 50px;
+  padding-right: 50px;
+  /* Define a fonte utilizada para o texto dentro do elemento 'creditos-autores' como 'Sen' ou, se não disponível, uma fonte sans-serif genérica */
+  font-family: 'Sen', sans-serif;
+  /* Alinha o texto justificado dentro do elemento 'creditos-autores' */
+  text-align: justify;
+  /* Define a cor de fundo do elemento 'creditos-autores' como #ffffff (branco) */
+  background-color: #ffffff;
+  /* Define a largura do elemento 'creditos-autores' como 100% da largura disponível */
+  width: 100%;
+}
+
+/* Estilizando a classe 'links' */
+.links
+{
+  /* Define a cor do texto dos elementos com a classe 'links' como #000 (preto) */
+  color: #000;
+  /* Adiciona uma decoração de sublinhado aos elementos com a classe 'links' */
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* deixando o menu responsivo como "none", pois ele só aparecerá quando a tela for menor e entrar na Media Queries */
+#menu-responsivo{
+/* Configura o modelo de layout do elemento 'menu-responsivo' como "none", ou seja, vazio */
+  display: none;
+}
+
+/* Esta regra @media, aplica estilos CSS apenas quando a largura da tela é de no máximo 970 pixels. */
+@media (max-width: 970px){
+
+  /* estilizando a classe "menu" -> que é quando o px da tela está maior que 970px */
+  /* estilizando o id da "nav-menu-responsivo", pois caso ao contrário os elementos ficam aparecendo, e o intuíto, são eles aparecerem apenas ao clicar no botão "menu responsivo" */
+  .menu, #nav-menu-responsivo  {
+    /* Configura o modelo de layout dos elementos como "none", ou seja, vazio */
+    display: none;
+  }
+
+  /* estilizando o id "menu-responsivo" */
+  #menu-responsivo{
+    /* Define a cor de fundo do elemento 'menu-responsivo' como #f4a261 (um tom de laranja) */
+    background-color: #f4a261;
+    /* Define a cor do texto dentro do elemento 'menu-responsivo' como branco */
+    color: white;
+    /* Alinha os itens (filhos diretos) horizontalmente no centro do elemento 'menu-responsivo' */
+    justify-content: center;
+    /* Alinha os itens (filhos diretos) verticalmente no centro do elemento 'menu-responsivo' */
+    align-items: center;
+    /* Configura o modelo de layout do elemento 'menu-responsivo' como um contêiner flexível */
+    display: flex;
+    /* Define a largura do elemento 'menu-responsivo' como 100% da largura disponível */
+    width: 100%;
+    /* Define a fonte utilizada para o texto dentro do elemento 'menu-responsivo' como 'Sen' ou, se não disponível, uma fonte sans-serif genérica */
+    font-family: 'Sen', sans-serif;
+    /* Define a altura do elemento 'menu-responsivo' como 25 pixels */
+    height: 25px;
+    /* A propriedade 'overflow: hidden;' esconde qualquer conteúdo que ultrapasse as dimensões do contêiner. 
+   Isso significa que qualquer conteúdo que se estenda além da largura ou altura especificada do contêiner será oculto.
+   É útil quando se deseja cortar ou ocultar o excesso de conteúdo que não deve ser exibido fora dos limites do contêiner. */
+    overflow: hidden;
+  }
+
+  /* estilizando o id "botao-menu-responsivo" */
+  #botao-menu-responsivo{
+    /* deixando o botão sem cor de fundo */
+    background: none;
+  }
+
+  /* estilizando o id "nav-menu-responsivo.activated", que só é executado quando existe a classe no id da "nav-menu-responsivo", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo" */
+  #nav-menu-responsivo.activated{
+     /* Configura o modelo de layout do elemento 'creditos-autores' como um contêiner flexível */
+    display: flex;
+    /* ignora todos os elementos que não respeitam o seu limite, isto é, ele fica em cima de qualquer coisa */
+    position: absolute;
+    /* definindo que os itens irão ficar a 0px para esquerda */
+    left: 0; 
+    /* definindo a distância do top de "124px" */
+    top: 134px;
+    /* definindo o "padding", isto é, o prenchimento do elemento, sendo que, em cima e do lado esquerdo é 0, e do lado direito e em baixo com "100vh", ou seja, os elementos ocupem toda a altura da tela do dispositivo do usuário, garantindo que se ajustem dinamicamente conforme o tamanho da janela do navegador*/
+    padding: 0 100vw 100vh 0;
+    /* definindo o fundo da "nav-menu-responsivo" */
+    background: #f4a261;
+    /* alinhando os itens no centro, em relação ao eixo y */
+    align-items: center;
+  }
+
+   /* estilizando o id "nav-menu-responsivo.activated ul", que só é executado quando existe a classe no id da "nav-menu-responsivo", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo" */
+  #nav-menu-responsivo.activated ul{
+    /* alinhando os itens da "nav-menu-responsivo" para a esquerda */
+    text-align: left;
+  }
+
+  /* estilizando o id "nav-menu-responsivo.activated ul li", que só é executado quando existe a classe no id da "nav-menu-responsivo", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo" */
+  #nav-menu-responsivo.activated ul li{
+    /* definindo o "padding", isto é, o prenchimento dos elementos, sendo a parte de baixo, de 5px */
+    padding-bottom: 5px;
+     /* definindo o "padding", isto é, o prenchimento dos elementos, sendo a parte de cima, de 5px*/
+    padding-top: 5px;
+    /* definindo a "margin", isto é, a distância dos elementos do limite da página, de 5px*/
+    margin-left: 5px;
+    /* defininfo a bordar de cada elemnto para fazer o efeito de quando passa o mouse em cima ou quando o elemento é clicado, sendo seu tamanho de 1px, da forma sólida, e da cor preta */
+    border-bottom: 1px solid black;
+    /* definindo sua largura como 0, porque o intuíto é ela aparecer apenas quando estiver no modo "houver", para ficar mais intrerativo com o usuário */
+    width: 0;
+    /* definindo que os elemento da "nav-menu-responsivo" vão ficar agrupados para a esquerda, isto é, em um distância de opx da esquerda */
+    left: 0;
+    /* definindo a transição dos elementos ao serem clicados, ou qwuando passa o mouse em cima, sendo "all" para todos os eleementos, ".3s" o tempo de transição, e o formato da transição sendo "ease", ou seja, simples  */
+    transition: all .3s ease;
+    }
+  
+    /* estilizando o id "nav-menu-responsivo.activated ul li a", que só é executado quando existe a classe no id da "nav-menu-responsivo", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo" */
+  #nav-menu-responsivo.activated ul li a{
+    /* Configura o modelo de layout do elemento 'nav-menu-responsivo.activated ul li a' como um contêiner de blocos */
+    display: block;
+    /* definindo a largura dos elementos com "100vh", ou seja, os elementos ocupem toda a altura da tela do dispositivo do usuário, garantindo que se ajustem dinamicamente conforme o tamanho da janela do navegador */
+    width: 100vw;
+    /* o cursor do mouse assumirá a forma de uma mãozinha, colocação */
+    cursor: pointer;
+  }
+
+   /* estilizando o id "nav-menu-responsivo.activated ul li", que só é executado quando existe a classe no id da "nav-menu-responsivo", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo". O modo "houver", só acontece quando o usuário passa o mouse por cima, ou quando clica*/
+  #nav-menu-responsivo.activated ul li:hover{
+    /* definindo o tamanho da borda dos elemento da "nav-menu-responsivo" como 25% */
+    width: 25%;
+  }
+
+   /* estilizando o id "body.activated", que só é executado quando existe a classe no id da "body.activated", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo" */
+  #body.activated{
+    /* Isso significa que se o conteúdo de um elemento for maior do que suas dimensões especificadas (largura e altura), em vez de se expandir para fora dos limites, o overflow: hidden;esconderá o conteúdo extra, mantendo-o dentro dos limites do elemento pai */
+    overflow: hidden;
+  }
+
+  /* estilizando o id "body.activated", que só é executado quando existe a classe no id da "body.activated", como "activated", onde, pelo javascript, esta classe só existe quando o usuário aperta o botão do "menu-responsivo". O modo "houver", só acontece quando o usuário passa o mouse por cima, ou quando clica */
+  #botao-menu-responsivo:hover{
+    /* o cursor do mouse assumirá a forma de uma mãozinha, colocação */
+    cursor: pointer;
+    /* definindo a cor que será o botão quando o usuário passar o mouse em cima ou clicar */
+    background: #e7e7e7;
+  }
+}

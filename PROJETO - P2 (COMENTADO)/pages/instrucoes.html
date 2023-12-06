@@ -1,0 +1,157 @@
+<!-- declarando o tipo do documento -->
+<!DOCTYPE html>
+
+<!-- abrindo a tag para iniciar o html
+e declarando a língua -->
+<html lang="pt-br">
+
+
+<head>
+  <!-- IMPORTAR A FONTE PELO HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- ESTABELECER UMA PRECONEXÃO AO LINK fonts.googleapis.com -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- ESTABELECER UMA PRECONEXÃO AO LINK fonts.googleapis.com/css2?family=Sen&display=swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <!-- IMPORTAR UMA FONTE DE ESTILIZAÇÃO À PARTIR DO LINK -->
+
+  <!-- IMPORTAR A FONTE NEGRITO PELO HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- ESTABELECER UMA PRECONEXÃO AO LINK fonts.googleapis.com -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- ESTABELECER UMA PRECONEXÃO AO LINK fonts.gstatic.com com um mecanismo usado para adicionar cabeçalhos que informam aos navegadores para permitir que uma aplicação Web seja executada em uma origem e acesse recursos de outra origem diferente-->
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+  <!-- IMPORTAÇÃO DE LINK DE ESTILIZAÇÃO  -->
+
+  <!-- declarando os códigos que serão aceitos na página (caracteres Unicode) -->
+  <meta charset="UTF-8">
+  <!-- Este meta tag é comum em documentos HTML antigos e é usada para fornecer instruções para o Internet Explorer sobre a renderização da página. O valor "ie=edge" instrui o IE a usar a versão mais recente do mecanismo de renderização disponível. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- A tag meta com o atributo name definido como "viewport" é usada para controlar as propriedades da janela de visualização no dispositivo. Aqui, width=device-width indica que a largura da janela de visualização deve seguir a largura do dispositivo, e initial-scale=1.0 define o nível de zoom inicial ao carregar a página. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- nome do site  -->
+  <title> INSTRUÇÕES </title>
+
+  <!-- imagem do logo do enade na head -->
+  <link rel="shortcut icon" type="imagem/x-icon" href="../html/logo-enade.svg" />
+
+  <!-- CHAMA O CÓDIGO DO CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- CHAMA O ARQUIVO DE ESTILIZAÇÃO GERAL "style.css" -->
+  <link rel="stylesheet" href="../css/intruções.css">
+  <!-- CHAMA O ARQUIVO DE ESTILIZAÇÃO ESPECÍFICO DIRECIONADO À PAGINA "creditos.css" -->
+  <script src="https://kit.fontawesome.com/83b15db74c.js" crossorigin="anonymous"></script>
+  <!-- CHAMA O LINK PARA ESILIZAÇÃO -->
+</head>
+<!-- FECHAMENTO DA TAG <head> -->
+
+<!-- INÍCIO/ABERTURA DA TAG DO CORPO <body> -->
+<body id="body">
+  <!-- EXISTE A HEADER, MAIN, FOOTER -->
+  <header id="header">
+    <!-- DIV DA LOGO -->
+    <div class="logo">
+      <img src="../imgs/logo_enade_completo.svg">
+      <!-- IMPORTAÇÃO DA IMAGEM DESTINADA À LOGO -->
+    </div>
+
+    <!-- DIV DO MENU -->
+    <div class="menu">
+      <a href="../index.html">
+        <!-- REDIRECIONAMENTO PARA A PÁGINA NOMEADA "index.html"-->
+        <H3>SOBRE</H3>
+        <!-- TAG PARA TÍTULO -->
+      </a>
+      <!-- FECHAMENTO DA TAG <a> -->
+
+      <a href="prova.html?questao=1">
+      <!-- REDIRECIONAMENTO PARA O ELEMENTO "?questão=1" DA PÁGINA NOMEADA "prova.html"-->
+        <h3>PROVA</h3>
+        <!-- TAG PARA TÍTULO -->
+      </a>
+      <a href="creditos.html">
+        <!-- REDIRECIONAMENTO PARA A PÁGINA NOMEADA "creditos.html" -->
+        <h3>CRÉDITOS</h3>
+        <!-- TAG PARA TÍTULO -->
+      </a>
+      <!-- FECHAMENTO DA TAG <a> -->
+    </div>
+    <!-- FECHAMENTO DA TAG <div> -->
+
+
+
+      <!-- criando uma div com o id "menu-responsivo", para diexar o menu resxponsivo em outros aparelhos com telas menores -->
+      <div id="menu-responsivo">
+        <!-- criando um botão do menu responsivo, com o id "botao-menu-responsivo" para que ao clicar os itens, que antes eram inline, ficam um debaixo do outro -->
+        <button id="botao-menu-responsivo">MENU</button> 
+        <!-- criando uma navegação para o menu responsivo, com o id "nav-menu-responsivo"-->
+        <nav id="nav-menu-responsivo">
+          <!-- criando uma lista não ordenada para colocar os itens no menu -->
+          <ul>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="../index.html"">SOBRE</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="prova.html?questao=1">PROVA</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="creditos.html">CRÉDITOS</a></li>
+          </ul> <!-- fechando a tag da lista não ordenada -->
+        </nav> <!-- fechando a tag "nav" da navegação-->
+      </div> <!-- fechando a div do menu responsivo -->
+  </header> <!-- FIM DO CABEÇALHO -->
+
+
+  <!-- FECHAMENTO DA TAG HEADER -->
+  <!-- </a>
+        <a href="../pages/prova.html?questao=1">
+      </a>
+        <a href="../pages/creditos.html">
+      </a> 
+    </div>
+  </header> -->
+
+    <h1>INSTRUÇÕES</h1>
+    <!-- TÍTULO EM DESTAQUE DA ÁREA DE INSTRUÇÕES -->
+    <ol style="padding: 40px 30px;"> <!-- LISTA DE ITENS ORDENADOS -->
+        <!-- CADA <li> É UMA LISTA DE ITENS EM HTLM. É usado para representar um item que faz parte de uma lista-->
+        <li>Este simulado é composto por 35 questões objetivas, com alternativas de A a E.</li>
+        <li>Para iniciar o simulado, clique em INICIAR PROVA para responder as questões</li>
+        <li>Para cada pergunta, escolha a resposta que você acredita ser a correta e clique na opção correspondente,você visualizará se acertou ou errou a questão além de visualizar a resposta correta.</li>
+        <li>Para avançar para a proxima questão, basta clicar no botão correspondente à próxima questão </li>
+        <li>Você poderá finalizar o simulado a qualquer momento, basta clicar no botão FINALIZAR. Se desejar, ao finaliza-lo, você poderá retornar ao início e refaze-lo.</li>
+        <li>Ao terminar, você será direcionado ao seu resultado, com o gráfico exibindo seus acertos e erros. Serão contabilizadas as questões em branco ou não respondidas como erro.</li>
+		<li>Na página do resultado, será possível a consulta de informações adicionais sobre o sistema através dos botões SOBRE,CRÉDITOS,REFAZER O SIMULADO, que reiniciará o simulado, a partir da primeira questão, ou SAIR, que redirecionará para a página inicial.</li>
+		<li>Acima estão os seguintes botões: SOBRE, PROVA E CRÉDITOS que redirecionam às respectivas páginas, com informações sobre o sistema, bem como os créditos para os conteúdos utilizados. O botão PROVA redireciona à tela da primeira questão. Em seguida, temos os logos da FATEC CARAPÍCUIBA, CENTRO PAULA SOUZA e ADS , com hiperlinks que direcionam até os respectivos sites.</li>
+    </ol> <!-- O Elemento HTML <ol> (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. -->
+    <p>Boa sorte!</p>
+    <!-- TAG <p> É A REPRESENTAÇÃO DE UM PARÁGRAFO -->
+	<br>
+  <!-- <br> QUEBRA DE LINHA -->
+  <!-- CORPO DO CORPO -->
+  <main>
+  <!-- ABRINDO O FOOTER -->
+  <footer>
+    <!-- DIV DOS RODAPÉ -->
+    <div class="logorodape">
+        <!-- IMAGEM DA LOGO DO SITE CPS FATEC (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.cps.sp.gov.br/fatec/">
+            <img class="img-logo" src="../imgs/logo-cps.png">
+        </a>
+        <!-- IMAGEM DA LOGO DO SITE FATEC CARAPICUÍBA (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.fateccarapicuiba.edu.br/">
+            <img class="img-logo" src="../imgs/logo-fatec-carapicuiba.png">
+        </a>
+        <!-- IMAGEM DA LOGO DA CIDADE DE SÃO PAULO (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.saopaulo.sp.gov.br/">
+            <img class="img-logo" src="../imgs/logo-saopaulo.png">
+        </a>
+    </div>
+  </footer>
+
+   <!-- importanto o código do ajvascript do menu responsivo -->
+  <script src="../js/menuReponsivo.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- Esta linha define o tipo de documento como HTML5. O DOCTYPE (Document Type Definition) declara a versão do HTML utilizada no documento, permitindo que os navegadores interpretem corretamente o código. -->
+<html lang="pt-br">
+<!-- Esta linha inicia o elemento HTML, que é o elemento raiz de um documento HTML. O atributo lang é usado para especificar o idioma do documento, neste caso, é "pt-br" indicando que o idioma é o português do Brasil. -->  
+  <head>
+    <!-- IMPORTAR A FONTE PELO HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <!-- Cria um link de pré-conexão com o domínio "https://fonts.googleapis.com". -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Cria um link de pré-conexão com o domínio "https://fonts.gstatic.com" indicando que a conexão deve ser cross-origin. -->
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"/>
+    <!-- Importa a folha de estilos da fonte "Sen" hospedada no Google Fonts. -->
+    <!-- Importando a versão negrito da fonte via HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Cria um link de pré-conexão com o domínio "https://fonts.googleapis.com". -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Cria um link de pré-conexão com o domínio "https://fonts.gstatic.com" indicando que a conexão deve ser cross-origin. -->
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap"rel="stylesheet"/>
+    <!-- Importa a folha de estilos da fonte "Sen" com peso (weight) 700 (negrito), hospedada no Google Fonts. -->
+
+    <!-- Declarando o conjunto de caracteres que serão usados na página (UTF-8) -->
+    <meta charset="UTF-8" />
+    <!-- Instruções para navegadores definindo que a página deve ser renderizada na versão mais recente do Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Definindo a configuração de visualização da página, adaptando-a automaticamente ao tamanho da tela do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título do site que será exibido na guia do navegador -->
+    <title>ENADE 2021 - Letras Inglês Licenciatura</title>
+
+    <!-- Especificando o ícone de atalho (favicon) da página -->
+    <link rel="shortcut icon" type="imagem/x-icon" href="../html/logo-enade.svg"/>
+
+    <!-- Importando o código CSS para estilizar a página -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/creditos.css" />
+    <!-- Incluindo um script JavaScript do kit Font Awesome para uso de ícones -->
+    <script src="https://kit.fontawesome.com/83b15db74c.js" crossorigin="anonymous"></script>
+  </head>
+  <!-- fechando a tag do "head" -->
+
+  <body>
+    <!-- abrindo a tag do corpo da página -->
+
+    <!-- Início do corpo da página -->
+    <!-- EXISTE A HEADER, MAIN, FOOTER -->
+    <!--Indicação de que existem seções para header, main e footer no código -->
+    <header id="header">
+      <!-- Início da seção do cabeçalho da página -->
+
+      <!-- DIV DA LOGO -->
+      <!--Divisão para a exibição do logotipo -->
+      <div class="logo">
+        <!-- Início da div com a classe "logo" -->
+
+        <!-- Imagem do logotipo ENADE sendo exibida -->
+        <img src="../imgs/logo_enade_completo.svg" />
+      </div>
+      <!-- Fechamento da div com a classe "logo" -->
+
+      <!-- DIV DO MENU -->
+      <!--Divisão para a exibição do menu de navegação -->
+      <div class="menu"> 
+        <!-- Início da div com a classe "menu" -->
+
+        <!-- Link para a página "index.html" -->
+        <a href="../index.html">
+          <!-- Texto "SOBRE" em um cabeçalho de terceiro nível (H3) -->
+          <h3>SOBRE</h3>
+        </a>
+        <!-- fechando a tag do link para a página "index.html" -->
+
+        <!-- Link para a página "prova.html" -->
+        <a href="prova.html?questao=1">
+          <!-- Texto "PROVA" em um cabeçalho de terceiro nível (H3) -->
+          <h3>PROVA</h3>
+        </a>
+        <!-- fechando a tag do link para a página "prova.html" -->
+
+        <!-- Link para a página "instrucoes.html" -->
+        <a href="instrucoes.html">
+          <!-- Texto "INSTRUÇÕES" em um cabeçalho de terceiro nível (H3) -->
+          <h3>INSTRUÇÕES</h3>
+        </a>
+        <!-- fechando a tag do link para a página "prova.html" -->
+      </div>
+      <!-- Fechamento da div com a classe "menu" -->
+
+ 
+      
+      <!-- criando uma div com o id "menu-responsivo", para diexar o menu resxponsivo em outros aparelhos com telas menores -->
+      <div id="menu-responsivo">
+        <!-- criando um botão do menu responsivo, com o id "botao-menu-responsivo" para que ao clicar os itens, que antes eram inline, ficam um debaixo do outro -->
+        <button id="botao-menu-responsivo">MENU</button> 
+        <!-- criando uma navegação para o menu responsivo, com o id "nav-menu-responsivo"-->
+        <nav id="nav-menu-responsivo">
+          <!-- criando uma lista não ordenada para colocar os itens no menu -->
+          <ul>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="../index.html"">SOBRE</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="prova.html?questao=1">PROVA</a></li>
+            <!-- os tópicos da lista "li", são as páginas do menu -->
+            <!-- usando a tag "a" de hiperlink para redirecionar o usuário para a página que clicar -->
+            <li><a href="instrucoes.html">INSTRUÇÕES</a></li>
+          </ul> <!-- fechando a tag da lista não ordenada -->
+        </nav>  <!-- fechando a tag "nav" da navegação-->
+      </div> <!-- fechando a div do menu responsivo -->
+    </header> <!-- Fechamento da seção do cabeçalho da página -->
+    
+
+    <!-- CORPO DO CORPO -->
+    <!--Início da seção principal do corpo da página -->
+    <main>
+      <!-- Início da seção principal da página -->
+      <div class="creditos">
+        <br />
+        <!-- Quebra de linha -->
+
+        <!-- Título "CRÉDITOS" em um cabeçalho de primeiro nível (H1) -->
+        <h1>CRÉDITOS</h1>
+        <br />
+        <!-- Quebra de linha -->
+
+        <!-- deixando em negrito -->
+        <b>Prova do Simulado:</b>
+
+        <p>
+          <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
+
+          A prova original em <i>PDF</i>. E foi retirado do site do
+
+          <!-- Abrindo a tag 'a' para fazer um link para a prova em pdf-->
+          <a target="_blank" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos" class="links">
+            <!-- A tag 'i' deixa o q estiver dentro dela com a fonte itálica, colocamos para que fique evidente que ao clicar na frase com o hiperlink, redirecione para a página da prova-->
+            <i>Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP)</i>
+          </a>
+          <!-- fechando a tag do link para a prova em pdf -->
+
+          . Todos os direitos reservados ao
+
+          <!-- Abrindo a tag 'a' para fazer um link para o site do inep-->
+          <a target="_Blank" href="https://www.gov.br/inep/pt-br" class="links">
+            <!-- tag para deixar em negrito -->
+            <i>INEP</i>
+            <!-- Inserindo um texto no link-->
+          </a>
+          <!-- fechando a tag do link para a página do site do inep -->
+
+          e ao
+          <!--Abrindo a tag 'a' para fazer um link para o site oficial do eneade  -->
+          <a target="_Blank" href="http://enade.inep.gov.br/enade/#!/index" class="links">
+            <!-- deixando em negrito -->
+            <i>Exame Nacional de Desempenho dos Estudantes (ENADE).</i>
+          </a>
+          <!-- fechando a tag do link para a página do site oficial do enade -->
+        </p>
+        <!-- Fechando a tag 'p' para finalizar o parágrafo-->
+        <br />
+        <span class="fonte-enade"
+          >Fonte:
+          <!-- link do site "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP)"  -->
+          https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos</span
+        >
+
+        <span class="fonte-enade"
+          >Fonte:
+          <!-- link do site "(INEP)"  -->
+          https://www.gov.br/inep/pt-br</span
+        >
+
+        <span class="fonte-enade"
+          >Fonte:
+          <!-- link do site "ENADE"  -->
+          http://enade.inep.gov.br/enade/#!/index</span
+        >
+
+        <br/>
+        <!-- pulando uma linha-->
+
+        <b>
+          <!-- Abrindo a tag 'b' para deixar o for escrito em negrito-->
+          SweetAlert:
+        </b>
+        <!-- fechando a tag 'b' para deixar o for escrito em negrito-->
+
+        <p>
+          <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
+
+          Por disponibilizar o uso de pop-ups costumizáveis, os quais foram
+          utilizados para exibir a corrção das questões
+
+          <!-- Abrindo a tag 'a' para fazer um link para a página do curso de ADS da Fatec-Carapicuíba-->
+          <a target="_blank" href="https://sweetalert.js.org" class="links">
+            <!-- deixando em itálico -->
+            <i> SweetAlert </i>
+          </a>
+          <!-- fechando a tag do link para a página do site oficial do enade -->
+        </p>
+        <!-- Fechando a tag 'p' para finalizar o parágrafo-->
+        <br />
+
+        <span class="fonte-enade"
+          >Fonte:
+          <!-- link do site "SWEETALERT"  -->
+          https://sweetalert.js.org</span
+        >
+
+        <br />
+        <!-- pulando uma linha-->
+
+        <b>
+          <!-- Abrindo a tag 'b' para deixar o for escrito em negrito-->
+          Fatec Carapicuiba:
+        </b>
+        <!-- fechando a tag 'b' para deixar o for escrito em negrito-->
+
+        <p>
+          <!-- Abrindo a tag 'p', para escrevermos um parágrafo no HTML-->
+
+          Por ministrar o curso superior de tecnologia em
+          <!-- Abrindo a tag 'a' para fazer um link para a página do curso de ADS da Fatec-Carapicuíba-->
+          <a target="_blank" href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" class="links">
+            <!-- deixando em itálico -->
+            <i> Análise e Desenvolvimento de Sistemas (ADS).</i>
+          </a>
+          <!-- fechando a tag do link para a página do site do curso de ADS da Fatec´Carapicuíba -->
+        </p>
+        <!-- Fechando a tag 'p' para finalizar o parágrafo-->
+        <br/>
+
+        <span class="fonte-enade"
+          >Fonte:
+          <!-- link do site "CURSO DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS"  -->
+          http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/</span
+        >
+      </div>
+      <!-- Fechando a 'div' com a classe "creditos"-->
+
+      <div class="creditos-autores">
+        <!-- Abrindo uma 'div' com classe "creditos-autores"-->
+        <!--  -->
+        <b>Orientadora/Revisora:</b>
+        <p>Msc. Felix, Rita</p>
+        <!-- deixando como um parágrafo o nome da revisora-->
+
+        <br/>
+        <!-- pulando linha -->
+
+        <!-- Abrindo e fechando a tag 'b' para deixar o for escrito em negrito-->
+        <b>Autores:</b>
+        <!-- deixando em negrito-->
+
+        <p>
+          <!-- deixando em um único parágrafo o nome dos autores do site-->
+
+          Ana Beatriz Pereira Pataro<br/>
+          <!-- pulando linha -->
+          Giovana Luccas Kadomoto<br/>
+          <!-- pulando linha -->
+          Giovanna Ferreira dos Santos<br/>
+          <!-- pulando linha -->
+          Gustavo de Moraes Ribeiro<br/>
+          <!-- pulando linha-->
+          Leonardo Souza Rodrigues Abel<br/>
+          <!-- pulando linha -->
+          Marina Pimentel Santello
+        </p>
+        <!-- Fechando a tag 'p' para finalizar o parágrafo-->
+
+        <p>
+          <!-- Abrindo a tag 'p' para fazer um paragrafo-->
+          Alunos do 1º semestre cursando a disciplina de Programação em
+          Microinformática (PMI).
+        </p>
+        <!-- Fechando a tag 'p' para finalizar o parágrafo-->
+      </div>
+      <!-- Fechando a 'div' com a classe "creditos-autores"-->
+    </main>
+    <!-- fechando a tag "main" -->
+    <br/>
+    <!-- pulando linha -->
+
+    <!-- ABRINDO O FOOTER -->
+    <footer>
+      <!-- DIV DOS RODAPÉ -->
+      <div class="logorodape">
+        <!-- IMAGEM DA LOGO DO SITE CPS FATEC (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.cps.sp.gov.br/fatec/">
+          <!-- link da img da logo do centro paula souza-->
+          <img class="img-logo" src="../imgs/logo-cps.png"/>
+        </a>
+        <!-- IMAGEM DA LOGO DO SITE FATEC CARAPICUÍBA (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.fateccarapicuiba.edu.br/">
+          <!-- link da img da logo da fatec de carapicuíba -->
+          <img class="img-logo" src="../imgs/logo-fatec-carapicuiba.png"/>
+        </a>
+        <!-- IMAGEM DA LOGO DO SITE DE SÃO PAULO (dentro da tag da img está o link, para que ao clicar, redirecione para o site) -->
+        <a target="_blank" href="https://www.saopaulo.sp.gov.br/">
+          <!-- link da img da logo de sp -->
+          <img class="img-logo" src="../imgs/logo-saopaulo.png"/>
+        </a>
+      </div>
+      <!-- fechando a div do logo -->
+    </footer>
+    <!-- fechando a tag footer do rodapé -->
+
+    <!-- importanto o código do ajvascript do menu responsivo -->
+    <script src="../js/menuReponsivo.js"></script>
+  </body>
+  <!-- fechando a tag body -->
+</html>
+<!-- fechando a tag do "html" -->
